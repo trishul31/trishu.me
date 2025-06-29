@@ -1,23 +1,94 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Coming Soon | Trishu</title>
-  <style>
-    body {
-      font-family: sans-serif;
-      text-align: center;
-      margin-top: 20%;
-      background: #fdfdfd;
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trishul S | Software Team Lead</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script>
+    function scrollToSection(id) {
+      document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
     }
-    h1 {
-      font-size: 3em;
-      color: #444;
-    }
-  </style>
+  </script>
 </head>
-<body>
-  <h1>Coming Soon</h1>
-  <p>My personal space is under construction.</p>
+<body class="bg-gray-50 text-gray-800 font-sans">
+  <!-- Header -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-indigo-600">Trishul S</h1>
+      <nav class="space-x-4">
+        <button onclick="scrollToSection('about')" class="hover:text-indigo-600">About</button>
+        <button onclick="scrollToSection('experience')" class="hover:text-indigo-600">Experience</button>
+        <button onclick="scrollToSection('skills')" class="hover:text-indigo-600">Skills</button>
+        <button onclick="scrollToSection('contact')" class="hover:text-indigo-600">Contact</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="bg-indigo-600 text-white py-20">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="text-4xl font-bold mb-4">Software Team Lead | Full-Stack Developer</h2>
+      <p class="text-xl">Delivering enterprise-grade solutions in Java, GIS, and Mobile App Development</p>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-16 bg-white">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-3xl font-semibold text-indigo-600 mb-4">About Me</h2>
+      <p class="text-lg leading-relaxed">
+        I am an experienced and dedicated Software Team Lead with over 6 years of professional expertise in full-stack development, specializing in Java Spring Boot, GIS systems, QGIS, and cross-platform mobile application development. Currently working at BCITS Private Limited, I have successfully led several government and enterprise projects, delivering high-quality, scalable, and reliable software solutions.
+      </p>
+      <p class="mt-4 text-lg leading-relaxed">
+        With a strong track record of consistent performance and leadership, I focus on practical, results-driven development while mentoring junior developers. My ability to adapt across technologies and deliver under pressure has earned me trust and respect within my team and organization.
+      </p>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="py-16 bg-gray-100">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-3xl font-semibold text-indigo-600 mb-4">Experience</h2>
+      <ul class="space-y-4">
+        <li>
+          <h3 class="text-xl font-bold">Software Team Lead @ BCITS Private Limited</h3>
+          <p class="text-gray-700">2017 - Present</p>
+          <p>Leading a team in delivering GIS-based and mobile-first solutions for government and enterprise clients. Architected scalable back-end systems using Spring Boot, developed GIS tools with QGIS, and deployed robust Android/iOS applications with seamless integration.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="py-16 bg-white">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-3xl font-semibold text-indigo-600 mb-4">Skills</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 text-center">
+        <span class="bg-indigo-100 text-indigo-800 py-2 rounded">Java</span>
+        <span class="bg-indigo-100 text-indigo-800 py-2 rounded">Spring Boot</span>
+        <span class="bg-indigo-100 text-indigo-800 py-2 rounded">Android / iOS</span>
+        <span class="bg-indigo-100 text-indigo-800 py-2 rounded">Python</span>
+        <span class="bg-indigo-100 text-indigo-800 py-2 rounded">GIS / QGIS</span>
+        <span class="bg-indigo-100 text-indigo-800 py-2 rounded">REST APIs</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-16 bg-gray-100">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-3xl font-semibold text-indigo-600 mb-4">Contact Me</h2>
+      <p class="text-lg">Feel free to reach out for project collaborations, technical consultations, or professional networking.</p>
+      <div class="mt-4">
+        <p>Email: <a href="mailto:trishulsvnshetty@gmail.com" class="text-indigo-600">trishulsvnshetty@gmail.com</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-4 text-sm text-gray-500">
+    © 2025 Trishul S — All rights reserved.
+  </footer>
 </body>
 </html>
